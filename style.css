@@ -1,0 +1,172 @@
+* {
+    font-family: "Merriweather", serif;
+    /* font-weight: 300; */
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(213, 230, 155);
+}
+nav{
+    height: 50px;
+    background-color: black;
+}
+nav ul{
+    /* margin-left: 10px; */
+    display: flex;
+    color: white;
+    list-style-type: none;
+    height: 50px;
+    gap: 20px;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: orange; */
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.logo img{
+    width: 45px;
+    margin: 0 5px;
+}
+
+.container {
+    height: 85vh;
+    background-color: orange;
+}
+.container h1{
+    font-size: 20px
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    height: 8.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+
+.progressBar{
+    width: 80%;
+    cursor: pointer;
+}
+
+.icons{
+    color: white;
+    /* height: 100px? */
+    display: flex;
+    gap: 10px;
+   
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+.icons i{
+    font-size: 20px;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    /* height: 80vh; */
+    margin: 25px auto;
+    width: 80vw;
+    color: white;
+    border-radius: 10px;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    overflow-y: scroll;
+}
+
+.leftBox{
+    margin-left: 25px;
+}
+
+.leftBox h1{
+    padding-top: 8px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+.songItem{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    margin: auto;
+    border-radius: 40px;
+    /* width: 80%; */
+    height: 60px;
+    margin-top: 20px;
+}
+.songItem img{
+    height: 50px;
+    border-radius: 50%;
+}
+
+.timestamps{
+    display: flex;
+    /* justify-content: center; */
+    align-self: center;
+}
+.time{
+    margin-right: 10px;
+}
+.play{
+    margin-top: 2px;
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    color: wheat;
+    bottom: 0;
+    margin-left: 5px;
+    margin-bottom: 3px;
+    left: 10vw;
+}
+.songInfo img{
+    height: 20px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.gif{
+    z-index: 1;
+}
+@media (max-width: 425px) {
+    nav ul{
+        justify-content: space-evenly;
+    }
+
+    .container h1{
+        padding-top: 8px;
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .container{
+        width: 100vw;
+        margin: 0;
+        border-radius: 0;
+    }
+    .leftBox{
+        margin: auto;
+    }
+    
+}
+
+  
